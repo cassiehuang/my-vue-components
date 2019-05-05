@@ -1,0 +1,40 @@
+{
+  "name": "my-vue-components",
+  "version": "0.1.0",
+  "description": "'A collection of Vue.js component'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [
+    "vue",
+    "component"
+  ],
+  "author": "cassie",
+  "license": "ISC",
+  "dependencies": {
+    "element-theme-chalk": "^2.8.2",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-knobs": "^5.0.7",
+    "@storybook/addon-links": "^5.0.6",
+    "@storybook/addon-storysource": "^5.0.11",
+    "@storybook/addons": "^5.0.6",
+    "@storybook/vue": "^5.0.6",
+    "babel-loader": "^8.0.5",
+    "babel-preset-vue": "^2.0.2",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  }
+}
