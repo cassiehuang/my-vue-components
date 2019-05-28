@@ -66,7 +66,7 @@
         </span>
         <i class="el-input__icon"
            v-if="validateState"
-           :class="['el-input__validation', validation]"></i>
+           :class="['el-input__validation', validateState]"></i>
       </span>
 
       <div class="el-input-group__append"
@@ -99,6 +99,7 @@ import calcTextareaHeight from './calcTextareaHeight.js';
 import emitter from '@/mixins/emitter.js';
 export default {
   name: 'MInput',
+  componentName: 'MInput',
   inheritAttrs: false,
   inject: {
     mForm: {
@@ -231,7 +232,7 @@ export default {
       this.$nextTick(this.resizeTextarea);
 
       if (this.validateEvent) {
-        this.dispatch('MFormIten', 'el.form.change', [val]);
+        this.dispatch('MFormItem', 'el.form.change', [val]);
       }
     },
     nativeInputValue() {

@@ -1732,6 +1732,13 @@ async-foreach@^0.1.3:
   resolved "https://registry.yarnpkg.com/async-foreach/-/async-foreach-0.1.3.tgz#36121f845c0578172de419a97dbeb1d16ec34542"
   integrity sha1-NhIfhFwFeBct5Bmpfb6x0W7DRUI=
 
+async-validator@^1.11.2:
+  version "1.11.2"
+  resolved "https://registry.yarnpkg.com/async-validator/-/async-validator-1.11.2.tgz#ca5e2ba31c15e9319cb2d873c2b137b67a198ead"
+  integrity sha512-KVbL4jU6ZRJA82D69oOCoyKqr99emuKNvG0axH3XpGZh0xy1wDHpdH4cGzvwJ9nXAM0j7k/waBId16CQVI8dlw==
+  dependencies:
+    babel-runtime "6.x"
+
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
@@ -2061,7 +2068,7 @@ babel-preset-vue@^2.0.2:
     babel-plugin-syntax-jsx "^6.18.0"
     babel-plugin-transform-vue-jsx "^3.5.0"
 
-babel-runtime@^6.18.0, babel-runtime@^6.26.0:
+babel-runtime@6.x, babel-runtime@^6.18.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=

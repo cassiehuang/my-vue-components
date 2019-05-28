@@ -15,6 +15,7 @@
   "author": "cassie",
   "license": "ISC",
   "dependencies": {
+    "async-validator": "^1.11.2",
     "element-theme-chalk": "^2.8.2",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.0",
