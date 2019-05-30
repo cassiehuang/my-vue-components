@@ -306,7 +306,7 @@ export default {
   mounted() {
     // prop需要验证的字段名
     if (this.prop) {
-      this.dispatch('MForm', 'el.form.addField', [this]);
+      this.dispatch('MForm', 'el.form.addField', this);
 
       let initialValue = this.fieldValue;
       if (Array.isArray(initialValue)) {

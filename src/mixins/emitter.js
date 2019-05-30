@@ -3,9 +3,9 @@ function broadcast(componentName, eventName, ...params) {
     var name = child.$options.componentName;
 
     if (name === componentName) {
-      child.$emit.call(child, eventName, params);
+      child.$emit.call(child, eventName, ...params);
     } else {
-      broadcast.call(child, componentName, eventName, params)
+      broadcast.call(child, componentName, eventName, ...params)
     }
   })
 }
@@ -25,7 +25,7 @@ export default {
       }
 
       if (parent) {
-        parent.$emit.call(parent, eventName, params);
+        parent.$emit.call(parent, eventName, ...params);
       }
     },
     broadcast(componentName, eventName, ...params) {

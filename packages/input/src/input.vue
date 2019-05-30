@@ -232,7 +232,7 @@ export default {
       this.$nextTick(this.resizeTextarea);
 
       if (this.validateEvent) {
-        this.dispatch('MFormItem', 'el.form.change', [val]);
+        this.dispatch('MFormItem', 'el.form.change', val);
       }
     },
     nativeInputValue() {
@@ -261,7 +261,7 @@ export default {
       this.focused = false;
       this.$emit('blur', event);
       if (this.validateEvent) {
-        this.dispatch('MFormItem', 'el.form.blur', [this.value]);
+        this.dispatch('MFormItem', 'el.form.blur', this.value);
       }
     },
     select() {
